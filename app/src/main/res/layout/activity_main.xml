@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.balakrishnan.callandmessage.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Phone Call And Message APP"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/phoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter Phone Number"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call"
+
+        android:layout_below="@+id/phoneNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+
+        android:inputType="textMultiLine"
+
+
+        android:background="@drawable/mailing"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/buttonCall"
+        android:gravity="top"
+
+        android:layout_alignStart="@+id/phoneNo"
+        android:hint="Enter message"/>
+
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:text="Send Message" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/textView"
+        app:srcCompat="@drawable/phone"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/phoneNo" />
+
+</RelativeLayout>
